@@ -1,0 +1,25 @@
+Function Main() returns nothing
+   integer userFt
+   integer userIn
+   
+   userFt = Get next input
+   userIn = Get next input
+   Put HeightMeas(userFt, userIn) to output
+   
+Function HeightMeas(integer heightFt, integer heightIn)returns float heightCm
+   float cmPerInch
+   integer InchesToFt
+   integer TotalInches
+   
+   cmPerInch = 2.54
+   InchesToFt = 12
+   
+   //Total Inches
+   TotalInches = (heightFt * InchesToFt) + heightIn
+   
+   // Convert In to Cm
+   heightCm = TotalInches * cmPerInch
+   
+   
+   
+   

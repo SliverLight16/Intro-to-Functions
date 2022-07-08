@@ -1,0 +1,24 @@
+Function Main() returns nothing
+   float pizzaDiameter
+   
+   pizzaDiameter = Get next input
+   
+   Put pizzaDiameter to output
+   Put " inch pizza has " to output 
+   Put PizzaCals(pizzaDiameter) to output
+   Put " calories.\n" to output
+  
+Function PizzaCals(float pizzaDiameter )returns float totalCals
+   float calsPerSqIn
+   
+   calsPerSqIn = 16.7
+   totalCals = CircleArea(pizzaDiameter) * calsPerSqIn
+
+Function CircleArea(float circleDiameter)returns float circleArea
+   float piVal
+   float circleRadius
+   
+   piVal = 3.14159265
+   circleRadius = circleDiameter / 2.0
+   circleArea = piVal * circleRadius * circleRadius
+   
